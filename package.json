@@ -6,6 +6,8 @@
   "scripts": {
     "devserver": "live-server",
     "watch:sass": "node-sass-chokidar ./sass/main.scss ./css/style.css -w",
+    "compile:sass": "node-sass-chokidar ./sass/main.scss ./css/style.comp.css",
+    "concat:sass": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
   "repository": {
